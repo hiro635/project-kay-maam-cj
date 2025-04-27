@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Engineering</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="welcome.html" class="logo">Itech Vision</a>
+            <div id="current-time" class="time-display"></div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="needhelp.html">Need Help?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function updateTime() {
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric', 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit', 
+                hour12: true 
+            };
+            const philippinesTime = new Date().toLocaleString("en-US", { timeZone: "Asia/Manila", ...options });
+            document.getElementById('current-time').innerText = "Current Time in Philippines: " + philippinesTime;
+        }
+
+        setInterval(updateTime, 1000); // Update every second
+    </script>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Computer Engineering World</h1>
+            <p>From Budget Builds to High-End Monsters</p>
+        </div>
+    </section>
+
+    <section class="pc-parts">
+        <h2>Low-End Build</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CPU</td>
+                    <td>Intel Core i3-12100F</td>
+                    <td>$99</td>
+                   <td><a href="https://shopee.ph/Intel-Core-i3-12100F-Core-i3-12th-Gen-Alder-Lake-Quad-Core-3.3-GHz-LGA-1700-58W-Desktop-Processor-i.89762129.19554892534?sp_atk=fd97948b-4c4e-4de9-bdcc-806345235307&xptdk=fd97948b-4c4e-4de9-bdcc-806345235307"><button>Buy</button></td></a>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>NVIDIA GTX 1650</td>
+                    <td>$149</td>
+                    <td><a href="https://shopee.ph/Graphics-Card-GIGABYTE-NVIDIA-GeForce-GTX1650-GDDR5-4GB-Domestic-Authorized-Dealer-Model-GV-N1650OC-4GD-GV-N1656OC-4GD-GV-N1650IXOC-4GD-i.1008337188.27226709417?sp_atk=ed641c83-24d1-42d4-ae00-830fab37c373&xptdk=ed641c83-24d1-42d4-ae00-830fab37c373"><button>Buy</button></td></a>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>16GB DDR4</td>
+                    <td>$45</td>
+                    <td><a href="https://shopee.ph/Kingston-HyperX-FURY-Desktop-DDR4-RAM-4GB-8GB-16GB-2133Mhz-2400Mhz-2666Mhz-3200Mhz-DIMM-Game-Memory-i.745033073.23332730604?sp_atk=ed4824f4-d42a-4067-b067-3fca94b181ec&xptdk=ed4824f4-d42a-4067-b067-3fca94b181ec"><button>Buy</button></td></a>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Mid-End Build</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CPU</td>
+                    <td>AMD Ryzen 5 7600</td>
+                    <td>$229</td>
+                    <td><a href="https://shopee.ph/Itw-AMD-Ryzen-5-7600-6-Cores-12-Threads-Desktop-Processor-i.89762129.23919316418?sp_atk=c0cb1b91-69e3-4be7-9952-1d4da97ae1d3&xptdk=c0cb1b91-69e3-4be7-9952-1d4da97ae1d3"><button>Buy</button></td></a>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>RTX 4060 Ti</td>
+                    <td>$399</td>
+                    <td><a href="https://shopee.ph/Itw-MSI-RTX-4060-Ti-Ventus-2X-Black-8GB-GDDR6-OC-Edition-Geforce-Graphic-Card-i.89762129.23669827871"><button>Buy</button></td></a>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>32GB DDR5</td>
+                    <td>$149</td>
+                    <td><a href="https://shopee.ph/Kingston-Fury-Beast-DDR5-16GB-32GB-16Gbit-DRAM-AMD-EXPO-Kit-of-2-Gaming-Desktop-Memory-Black-i.314659245.20053490848"><button>Buy</button></td></a>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>High-End Build</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CPU</td>
+                    <td>Intel Core i9-14900K</td>
+                    <td>$599</td>
+                    <td><a href="https://shopee.ph/Itw-Intel-Core-i9-14900K-36MB-Cache-up-to-6.00Ghz-Desktop-Processor-i.89762129.29112834373"><button>Buy</button></td></a>
+                </tr>
+                <tr>
+                    <td>GPU</td>
+                    <td>NVIDIA RTX 4090</td>
+                    <td>$1699</td>
+                    <td><a href="https://shopee.ph/Gigabyte-NVIDIA-GeForce-RTX5080-WINDFORCE-OC-SFF-16GB-GDDR7-GPU-GV-N5080WF3OC-16GD-i.225359055.29234364872"><button>Buy</button></td></a>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>64GB DDR5</td>
+                    <td>$299</td>
+                    <td><a href="https://shopee.ph/Itw-G.Skill-DDR5-RAM-64GB-(32GBx2)-6000Mhz-Ripjaws-M5-Neo-RGB-UDIMM-(F5-6000J3636F32GX2-RM5NRK)-i.89762129.28477861167"><button>Buy</button></td></a>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
+<iframe src="music.html" allow="autoplay" style="display:none;"></iframe>
